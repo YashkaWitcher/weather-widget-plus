@@ -348,8 +348,8 @@ dbgprint2("***************************************************")
     function buildMetogramData() {
         dbgprint2("buildMetogramData (OWM)" + currentPlace.identifier)
 
-        var offset = 0
-        switch (timezoneType) {
+        let offset = 0
+        switch (main.timezoneType) {
             case (0):
                 offset = dataSource.data["Local"]["Offset"]
                 break;
@@ -370,9 +370,7 @@ dbgprint2("***************************************************")
 
         var dateFrom = now
         var dateTo = now
-        var sunrise1 = (currentWeatherModel.sunRise)
-        var sunset1 = (currentWeatherModel.sunSet)
-        var isDaytime = (dateFrom > sunrise1) && (dateFrom < sunset1)
+
 
 
         for (var i = 0; i < xmlModelHourByHour.count; i++) {
@@ -382,6 +380,21 @@ dbgprint2("***************************************************")
             if (i === 0) {
                 var firstFromMs = dateFrom.getTime()
             }
+
+        var sunrise1 = UnitUtils.convertDate(currentWeatherModel.sunRise,2,currentPlace.timezoneOffset)
+        var sunset1 = UnitUtils.convertDate(currentWeatherModel.sunSet,2,currentPlace.timezoneOffset)
+        var isDaytime = (dateFrom > sunrise1) && (dateFrom < sunset1)
+        let localtimestamp = UnitUtils.convertDate(dateTo, 2 , currentPlace.timezoneOffset)
+
+        if (localtimestamp >= sunrise1) {
+            if (localtimestamp < sunset1) {
+                isDaytime = true
+            } else {
+                sunrise1.setDate(sunrise1.getDate() + 1)
+                sunset1.setDate(sunset1.getDate() + 1)
+                isDaytime = false
+            }
+        }
         dbgprint("DATEFROM\t" + obj.from + "\t\t" + dateFrom  + "\t\t" +  dateFrom.toUTCString())
         dbgprint("DATETO\t" + obj.to + "\t\t" + dateTo  + "\t\t" +  dateTo.toUTCString())
         dbgprint(dateTo + "\t\t" + new Date(dateTo).getTime()  + "\t\t" + firstFromMs  + "\t\t" + (new Date(dateTo).getTime() - firstFromMs)  + "\t\t" + limitMsDifference )
