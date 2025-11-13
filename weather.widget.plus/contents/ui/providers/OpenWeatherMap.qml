@@ -370,8 +370,8 @@ dbgprint2("***************************************************")
 
         var dateFrom = now
         var dateTo = now
-
-
+        var sunrise1 = (currentWeatherModel.sunRise)
+        var sunset1 = (currentWeatherModel.sunSet)
 
         for (var i = 0; i < xmlModelHourByHour.count; i++) {
         var obj = xmlModelHourByHour.get(i)
@@ -381,8 +381,6 @@ dbgprint2("***************************************************")
                 var firstFromMs = dateFrom.getTime()
             }
 
-        var sunrise1 = UnitUtils.convertDate(currentWeatherModel.sunRise,2,currentPlace.timezoneOffset)
-        var sunset1 = UnitUtils.convertDate(currentWeatherModel.sunSet,2,currentPlace.timezoneOffset)
         var isDaytime = (dateFrom > sunrise1) && (dateFrom < sunset1)
         let localtimestamp = UnitUtils.convertDate(dateTo, 2 , currentPlace.timezoneOffset)
 
