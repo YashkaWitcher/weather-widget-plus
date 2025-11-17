@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/tully-t/weather-widget-plus\n"
-"POT-Creation-Date: 2025-10-12 10:13-0700\n"
+"POT-Creation-Date: 2025-11-17 11:48-0700\n"
 "PO-Revision-Date: 2022-01-03 22:03+0000\n"
-"Last-Translator: Martin Kotelnik <clearmartin@seznam.cz>\n"
+"Last-Translator: Karel Mašek <masekkarel@vivaldi.net>\n"
 "Language-Team: Martin Kotelnik <clearmartin@seznam.cz>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -27,19 +27,19 @@ msgstr "Widget pro předpověď počasí"
 
 #: ../../weather.widget.plus/contents/code/data-loader.js
 msgid "%1 min ago"
-msgstr ""
+msgstr "před %1 min."
 
 #: ../../weather.widget.plus/contents/code/data-loader.js
 msgid "%1 hrs ago"
-msgstr ""
+msgstr "před %1 hod."
 
 #: ../../weather.widget.plus/contents/code/data-loader.js
 msgid "%1 days ago"
-msgstr ""
+msgstr "před %1. dny/dnem"
 
 #: ../../weather.widget.plus/contents/code/data-loader.js
 msgid "long ago"
-msgstr ""
+msgstr "Dávno"
 
 #: ../../weather.widget.plus/contents/code/unit-utils.js
 #: ../../weather.widget.plus/contents/ui/config/ConfigUnits.qml
@@ -110,11 +110,11 @@ msgstr "Jednotky"
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgctxt "Use default font"
 msgid "Default"
-msgstr ""
+msgstr "Výchozí"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Widget font"
-msgstr ""
+msgstr "Font Widgetu"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Text size mode"
@@ -122,15 +122,15 @@ msgstr ""
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Automatic fit"
-msgstr ""
+msgstr "Automaticky přizpůsobit"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Exact size"
-msgstr ""
+msgstr "Přesná velikost"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Text size"
-msgstr ""
+msgstr "Velikost textu"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 #: ../../weather.widget.plus/contents/ui/config/ConfigLayout.qml
@@ -141,11 +141,11 @@ msgstr ""
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Text visible"
-msgstr ""
+msgstr "Viditelný text"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Text drop shadow"
-msgstr ""
+msgstr "Stínování textu"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Icon size mode"
@@ -153,11 +153,11 @@ msgstr ""
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Icon size"
-msgstr ""
+msgstr "Velikost ikon"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Icon visible"
-msgstr ""
+msgstr "Viditelnost ikon"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgid "Icon drop shadow"
@@ -170,11 +170,11 @@ msgstr ""
 #: ../../weather.widget.plus/contents/ui/config/ConfigAppearance.qml
 msgctxt "Abbreviation for seconds"
 msgid "sec"
-msgstr ""
+msgstr "sek"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigLayout.qml
 msgid "Layout type"
-msgstr ""
+msgstr "Druh rozvržení"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigLayout.qml
 msgid "Horizontal"
@@ -413,11 +413,11 @@ msgstr ""
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigUnits.qml
 msgid "Temperature"
-msgstr ""
+msgstr "Teplota"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigUnits.qml
 msgid "Pressure"
-msgstr ""
+msgstr "Tlak"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigUnits.qml
 msgid "Precipitation"
@@ -433,7 +433,7 @@ msgstr ""
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigUnits.qml
 msgid "Wind speed"
-msgstr ""
+msgstr "Rychlost větru"
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigUnits.qml
 msgid "My local-time"
@@ -447,12 +447,12 @@ msgstr ""
 
 #: ../../weather.widget.plus/contents/ui/config/ConfigUnits.qml
 msgid "Location Timezone"
-msgstr ""
+msgstr "Časové pásmo"
 
 #: ../../weather.widget.plus/contents/ui/FullRepresentationInTray.qml
 #: ../../weather.widget.plus/contents/ui/FullRepresentation.qml
 msgid "Reload"
-msgstr ""
+msgstr "Znovu načíst"
 
 #: ../../weather.widget.plus/contents/ui/FullRepresentation.qml
 msgid "Next Location"
@@ -460,7 +460,7 @@ msgstr "Další lokace"
 
 #: ../../weather.widget.plus/contents/ui/FullRepresentation.qml
 msgid "Previous Location"
-msgstr ""
+msgstr "Předchozí lokace"
 
 #: ../../weather.widget.plus/contents/ui/main.qml
 msgid "%1 ago"
@@ -472,15 +472,15 @@ msgstr "brzy bude"
 
 #: ../../weather.widget.plus/contents/ui/providers/MetNo.qml
 msgid "Forecast data provided by the Norwegian Meteorological Institute"
-msgstr ""
+msgstr "Předpověd poskytnuta s pomocí Norského Meteorologického Institutu"
 
 #: ../../weather.widget.plus/contents/ui/providers/OpenMeteo.qml
 msgid "Forecast data provided by Open-Meteo"
-msgstr ""
+msgstr "Předpověd poskytnuta s pomocí Open-Meteo"
 
 #: ../../weather.widget.plus/contents/ui/providers/OpenWeatherMap.qml
 msgid "Forecast data provided by OpenWeather"
-msgstr ""
+msgstr "Předpověd poskytnuta s pomocí OpenWeather"
 
 #~ msgid "General"
 #~ msgstr "Obecné"
@@ -529,7 +529,7 @@ msgstr ""
 #~ "např. http://openweathermap.org/city/3065328 pro Prahu, ČR."
 
 #~ msgid "Add Met.no Map Place"
-#~ msgstr "Přidat lokaci Met.no Map Map"
+#~ msgstr "Přidat lokaci pomocí Met.no"
 
 #~ msgid "Layout type:"
 #~ msgstr "Typ zobrazení:"
@@ -538,13 +538,13 @@ msgstr ""
 #~ msgstr "Skrýt po:"
 
 #~ msgid "Find your city ID by searching here:"
-#~ msgstr "Najděte své city ID pomocí vyhledávání zde:"
+#~ msgstr "Najděte své 'city ID' pomocí vyhledávání zde:"
 
 #~ msgid "Plasmoid version:"
 #~ msgstr "Verze apletu:"
 
 #~ msgid "Reload interval:"
-#~ msgstr "Obnovovací interval:"
+#~ msgstr "Interval obnovování:"
 
 #~ msgid "Temperature:"
 #~ msgstr "Teplota:"
@@ -562,7 +562,7 @@ msgstr ""
 #~ msgstr "Povolit obnovování"
 
 #~ msgid "Pause Updating"
-#~ msgstr "Zakázat obnovování"
+#~ msgstr "Pozastavit obnovování"
 
 #~ msgid "today"
 #~ msgstr "dnes"
@@ -571,7 +571,7 @@ msgstr ""
 #~ msgstr "Offline režim"
 
 #~ msgid "Loading image..."
-#~ msgstr "Načítání obrázku..."
+#~ msgstr "Načítám obrázek..."
 
 #~ msgid "Render meteogram for yr.no"
 #~ msgstr "Použít renderovaný meteogram pro yr.no"
